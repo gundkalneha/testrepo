@@ -63,7 +63,7 @@ Resources:
 
                   # Method 2: Client.put_object()
                   client = boto3.client('s3')
-                  responseData = client.put_object(Body="testfile.txt", Bucket='nehagundkal-testbkt', Key='file-to-s3.txt')
+                  responseData = client.put_object(Body="testfile.txt", Bucket='nehagundkal-testbkt1', Key='file-to-s3.txt')
                   cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData)
               except:
                   cfnresponse.send(event, context, cfnresponse.FAILED, "FAILED Event")
